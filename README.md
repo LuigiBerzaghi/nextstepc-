@@ -1,4 +1,4 @@
-# NextStep – Future of Work API
+# NextStep 
 
 NextStep é uma plataforma de requalificação profissional. Esta versão em **ASP.NET Core** fornece autenticação simplificada, gestão de perfil, jornadas de aprendizado inteligentes, análise de currículo, dashboard, chat com mentor de IA e catálogo de profissões alinhados ao tema **“O Futuro do Trabalho”**.
 
