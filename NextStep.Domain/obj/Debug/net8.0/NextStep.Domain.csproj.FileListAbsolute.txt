@@ -1,0 +1,11 @@
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\bin\Debug\net8.0\NextStep.Domain.deps.json
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\bin\Debug\net8.0\NextStep.Domain.dll
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\bin\Debug\net8.0\NextStep.Domain.pdb
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\NextStep.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\NextStep.Domain.AssemblyInfoInputs.cache
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\NextStep.Domain.AssemblyInfo.cs
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\NextStep.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\NextStep.Domain.dll
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\refint\NextStep.Domain.dll
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\NextStep.Domain.pdb
+C:\Users\lbhsg\OneDrive\Área de Trabalho\ConsoleApp1\NextStep.Domain\obj\Debug\net8.0\ref\NextStep.Domain.dll
