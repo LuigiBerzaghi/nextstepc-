@@ -25,8 +25,8 @@ COPY . .
 # Copia artefatos publicados
 COPY --from=build /app/publish ./publish
 
-# Instala dotnet-ef para aplicar migrations em runtime
-RUN dotnet tool install -g dotnet-ef
+# Instala dotnet-ef (versão alinhada ao runtime 8.0.11) para aplicar migrations em runtime
+RUN dotnet tool install -g dotnet-ef --version 8.0.11
 ENV PATH="$PATH:/root/.dotnet/tools"
 
 # Script de entrada: aplica migrations e sobe a API
