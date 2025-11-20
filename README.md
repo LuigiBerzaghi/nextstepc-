@@ -17,13 +17,13 @@ NextStep é uma plataforma de requalificação profissional. Esta versão em **A
 Clone o repositório no diretório desejado:
 
 ```powershell
-git clone <repo>
+git clone https://github.com/LuigiBerzaghi/nextstepc-.git
 ```
 
 Navegue até o diretório do projeto:
 
 ```powershell
-cd <dir>
+cd nextstepc-
 ```
 
 ## Configuração
