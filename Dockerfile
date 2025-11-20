@@ -32,7 +32,7 @@ ENV PATH="$PATH:/root/.dotnet/tools"
 # Script de entrada: aplica migrations e sobe a API
 RUN chmod +x /app/entrypoint.sh
 
-# URLs para Render ($PORT é injetado pelo serviço)
-ENV ASPNETCORE_URLS=http://0.0.0.0:${PORT:-8080}
+# Valor padrão; o entrypoint recalcula usando $PORT do Render
+ENV ASPNETCORE_URLS=http://0.0.0.0:8080
 
 ENTRYPOINT ["/app/entrypoint.sh"]
