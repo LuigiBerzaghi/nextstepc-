@@ -21,6 +21,8 @@ builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(JwtOptio
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructure(builder.Configuration);
 
+var enableSwagger = builder.Configuration.GetValue<bool>("Swagger:Enabled", builder.Environment.IsDevelopment());
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
         options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
@@ -97,9 +99,12 @@ builder.Services.AddHealthChecks().AddDbContextCheck<NextStepDbContext>("databas
 var app = builder.Build();
 var apiVersionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
-if (app.Environment.IsDevelopment())
+if (enableSwagger)
 {
-    app.UseDeveloperExceptionPage();
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
