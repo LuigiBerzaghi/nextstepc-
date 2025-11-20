@@ -19,11 +19,17 @@ RUN dotnet publish NextStep.Api/NextStep.Api.csproj -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS final
 WORKDIR /app
 
+# Copia o código fonte (necessário para dotnet-ef localizar csproj em runtime)
+COPY . .
+
 # Copia artefatos publicados
-COPY --from=build /app/publish .
+COPY --from=build /app/publish ./publish
+
+# Instala dotnet-ef para aplicar migrations em runtime
+RUN dotnet tool install -g dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
 
 # Script de entrada: aplica migrations e sobe a API
-COPY entrypoint.sh .
 RUN chmod +x /app/entrypoint.sh
 
 # URLs para Render ($PORT é injetado pelo serviço)
