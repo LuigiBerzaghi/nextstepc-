@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IlFPqE4a8KQ=",
+  "dgSpecHash": "HpU9FKz0aFg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\ConsoleApp1\\NextStep.Application\\NextStep.Application.csproj",
+  "projectFilePath": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\nextstepc-\\NextStep.Application\\NextStep.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lbhsg\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\lbhsg\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

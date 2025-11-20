@@ -1,6 +1,6 @@
 {
-  "NextStep.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\ConsoleApp1\\NextStep.Api",
-  "NextStep.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\ConsoleApp1\\NextStep.Application",
-  "NextStep.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\ConsoleApp1\\NextStep.Domain",
-  "NextStep.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\ConsoleApp1\\NextStep.Infrastructure"
+  "NextStep.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\nextstepc-\\NextStep.Api",
+  "NextStep.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\nextstepc-\\NextStep.Application",
+  "NextStep.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\nextstepc-\\NextStep.Domain",
+  "NextStep.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\lbhsg\\OneDrive\\Área de Trabalho\\nextstepc-\\NextStep.Infrastructure"
 }

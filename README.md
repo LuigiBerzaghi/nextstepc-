@@ -8,7 +8,7 @@ NextStep é uma plataforma de requalificação profissional. Esta versão em **A
 | --- | --- |
 | `NextStep.Domain` | Entidades, enums e regras centrais (ex.: cálculo de progresso de jornada). |
 | `NextStep.Application` | DTOs, exceções, serviços de aplicação, contratos e geração de JWT. |
-| `NextStep.Infrastructure` | EF Core + SQL Server, repositórios, `NextStepDbContext`, migrations e seeds. |
+| `NextStep.Infrastructure` | EF Core + Oracle (ODP.NET), repositórios, `NextStepDbContext`, migrations e seeds. |
 | `NextStep.Api` | Controllers versionados, autenticação JWT, HATEOAS, health check, observabilidade. |
 | `NextStep.Tests` | Testes unitários (domínio) e de integração (WebApplicationFactory). |
 
@@ -31,7 +31,7 @@ cd nextstepc-
 1. **Connection string** : 
   Atualize o as credenciais em `appsettings.json` (`ConnectionStrings:DefaultConnection`).           
   O arquivo contém a observação para alterar **servidor**, **Usuário** e **senha** (caso necessário) antes de usar:  
-    `"DefaultConnection": "Server=localhost;Database=NextStepDb;User Id=sa;Password=SenhaForte123!;TrustServerCertificate=True;"`
+    `"DefaultConnection": "Data Source=oracle-host:1521/orcl;User Id=usuario;Password=senha;"`
 
 2. **JWT** — troque `Jwt:SecretKey` por um valor forte em produção.
 
@@ -43,7 +43,7 @@ dotnet restore NextStep.sln
 ```
 
 ```powershell
-# Aplicar migrations no SQL Server configurado
+# Aplicar migrations no Oracle configurado
 dotnet ef database update --project NextStep.Infrastructure --startup-project NextStep.Api
 ```
 

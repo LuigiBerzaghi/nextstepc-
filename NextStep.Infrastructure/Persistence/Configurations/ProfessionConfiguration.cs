@@ -16,6 +16,12 @@ public class ProfessionConfiguration : IEntityTypeConfiguration<Profession>
         builder.Property(p => p.Title).IsRequired().HasMaxLength(160);
         builder.Property(p => p.Category).IsRequired().HasMaxLength(120);
         builder.Property(p => p.Description).HasMaxLength(500);
+        builder.Property(p => p.IsActive)
+            .HasConversion(
+                v => v ? "Y" : "N",
+                v => v == "Y")
+            .HasColumnType("CHAR(1)")
+            .HasMaxLength(1);
 
         builder.HasData(
             new Profession
